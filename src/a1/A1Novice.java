@@ -33,9 +33,19 @@ public class A1Novice {
 			
 			System.out.println(firstNames[i].charAt(0) + ". " + lastNames[i] + ": " + String.format("%.2f", total));
 		}
+		scan.close();
 		
 		
 	}
+	/* 
+	 * calculateTotal
+	 * calculates customers total amount of food bought
+	 * 
+	 * Input: Item count of each item and the price of each item
+	 * 
+	 * Output: returns the total of all the items adding together
+	 * 
+	 */
 	static double calculateTotal(int[] count, double[] price) {
 		double total = 0;
 		for (int i = 0; i < count.length; i++) {
