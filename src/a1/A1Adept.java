@@ -49,8 +49,8 @@ public class A1Adept {
 		int biggest = findBiggest(totals);
 		double average = calculateAverage(totals);
 		
-		System.out.println("Biggest: " + firstNames[biggest] + "" + lastNames[biggest] + " (" + String.format("%.2f", totals[biggest]) + ") ");
-		System.out.println("Smallest: " + firstNames[smallest] + "" + lastNames[smallest] + " (" + String.format("%.2f", totals[smallest])  + ") ");
+		System.out.println("Biggest: " + firstNames[biggest] + " " + lastNames[biggest] + " (" + String.format("%.2f", totals[biggest]) + ") ");
+		System.out.println("Smallest: " + firstNames[smallest] + " " + lastNames[smallest] + " (" + String.format("%.2f", totals[smallest])  + ") ");
 		System.out.println("Average: " + String.format("%.2f", average));
 		
 		scan.close();
