@@ -31,7 +31,7 @@ public class A1Novice {
 			}
 			double total = calculateTotal(itemCount, itemPrice);
 			
-			System.out.println(firstNames[i].charAt(0) + ". " + lastNames[i] + ": " + total);
+			System.out.println(firstNames[i].charAt(0) + ". " + lastNames[i] + ": " + String.format("%.2f", total));
 		}
 		
 		
@@ -41,7 +41,9 @@ public class A1Novice {
 		for (int i = 0; i < count.length; i++) {
 			double a = count[i] * price[i];	
 			total += a;
+			
 		}
+		
 		return total;
 	}
 }
