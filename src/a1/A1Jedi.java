@@ -83,8 +83,7 @@ public class A1Jedi {
 		int totalItems = 0;
 		for (int i = 0; i < boughtFood.length; i++) {
 			if (storeItem.contentEquals(boughtFood[i])) {
-				totalItems = foodCount[i];
-				return totalItems;
+				totalItems += foodCount[i];
 			}
 		}
 		
